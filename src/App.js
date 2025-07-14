@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <Nav />
-      <Container customClass="content">  {/* container só para conteúdo */}
+      <Container customClass="content">  {}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/newproject" element={<NewProject />} />

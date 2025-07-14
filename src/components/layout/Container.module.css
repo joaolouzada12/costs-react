@@ -1,0 +1,28 @@
+.container {
+  max-width: 1200px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;        
+  padding: 20px;
+  background-color: lightblue;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans', sans-serif;  
+  padding: 20px;
+  flex: 1;
+}
+
+.minHeight {
+  min-height: 75vh;
+}
+
+.content {
+  flex-grow: 1; 
+}
+.start{
+  justify-content: flex-start;
+}
+.column {
+  flex-direction: column;
+  justify-content: flex-start;
+}

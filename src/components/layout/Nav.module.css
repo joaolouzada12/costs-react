@@ -1,13 +1,21 @@
 .nav {
-  background-color: #0047ab;  
+  background-color: #0047ab;
   padding: 1rem 2rem;
   font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoContainer img {
+  height: 40px; 
 }
 
 .navList {
-  list-style: none;
   display: flex;
+  align-items: center;
   gap: 20px;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -23,10 +31,6 @@
   color: #cce4ff;
 }
 
-.active {
-  color: #ffd700;  
-}
 .navList li a.active {
   color: #ffd700;
 }
-

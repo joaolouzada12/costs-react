@@ -1,9 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import styles from './Nav.module.css';
+import logo from '../../img/costs_logo.png';
 
 function Nav() {
   return (
     <nav className={styles.nav}>
+      <div className={styles.logoContainer}>
+        <img src={logo} alt="Costs" />
+      </div>
       <ul className={styles.navList}>
         <li>
           <NavLink
@@ -13,12 +17,20 @@ function Nav() {
             Home
           </NavLink>
         </li>
+                <li>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) => (isActive ? styles.active : undefined)}
+          >
+          Meus Projetos
+          </NavLink>
+        </li>
         <li>
           <NavLink
             to="/newproject"
             className={({ isActive }) => (isActive ? styles.active : undefined)}
           >
-            New Project
+            Novo Projeto
           </NavLink>
         </li>
         <li>
@@ -26,7 +38,7 @@ function Nav() {
             to="/company"
             className={({ isActive }) => (isActive ? styles.active : undefined)}
           >
-            Company
+            Empresa
           </NavLink>
         </li>
         <li>

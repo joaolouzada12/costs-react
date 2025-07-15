@@ -13,18 +13,19 @@ import Container from './components/layout/Container';
 function App() {
   return (
     <Router>
-      <Nav />
-  <Container customClass="minHeight">
-    <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/newproject" element={<NewProject />} />
-    <Route path="/company" element={<Company />} />
-    <Route path="/contato" element={<Contato />} />
-    <Route path="/projects" element={<Projects />} />
-    </Routes>
-</Container>
-
-      <Footer />
+      <div  className="app-container">
+        <Nav />
+          <Container customClass="minHeight">
+            <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/newproject" element={<NewProject />} />
+            <Route path="/company" element={<Company />} />
+            <Route path="/contato" element={<Contato />} />
+            <Route path="/projects" element={<Projects />} />
+            </Routes>
+        </Container>
+        <Footer />
+      </div>
     </Router>
   );
 }

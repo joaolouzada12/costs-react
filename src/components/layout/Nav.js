@@ -27,14 +27,6 @@ function Nav() {
         </li>
         <li>
           <NavLink
-            to="/newproject"
-            className={({ isActive }) => (isActive ? styles.active : undefined)}
-          >
-            Novo Projeto
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
             to="/company"
             className={({ isActive }) => (isActive ? styles.active : undefined)}
           >

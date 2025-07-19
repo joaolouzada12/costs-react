@@ -1,7 +1,10 @@
 .project_card {
-  padding: 1em;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: .9em;
   border: 1px solid #7a7a7a;
-  min-width: 225px;
+  min-width: 220px;
   box-sizing: border-box;
   border-radius: 8px;
   color: #ddd;
@@ -9,6 +12,14 @@
   flex-direction: column;
   justify-content: space-between;
   flex-shrink: 0;
+  flex: 1 1 calc((100% - 3rem) / 4);
+  max-width: 23%;
+  margin-bottom: 1rem;
+  max-width: calc((100% - 3rem) / 4);
+}
+.project_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .project_card h4 {
@@ -33,6 +44,9 @@
 .category_text {
   display: flex;
   align-items: center;
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 1em;
 }
 .category_text span {
   display: block;
@@ -40,7 +54,7 @@
   height: 12px;
   border-radius: 50%;
   background-color: #ccc;
-  margin-right: 5px;
+  margin-right: 0.5em;
 }
 
 .category_text .infra {
@@ -60,7 +74,7 @@
 }
 
 .project_card_actions {
-  margin-top:  1.2em;
+  margin-top:  1em;
   display: flex;
   align-items: center;
 }
@@ -68,11 +82,11 @@
 .project_card_actions a,
 .project_card_actions button {
     text-decoration: none;
-    border: none;
+    border-radius: 5px;
     background-color: #fff;
     color: #222;
     font-size: .9em;
-    padding: .6em 1em;
+    padding: 0;
     cursor: pointer;
     margin-right: 1em;
     border: 1px solid #222;
@@ -80,10 +94,18 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s;
-    padding: 0.6em 1em;
+    padding: .8em;
+    text-align: center;
+    height: 35px;
+    width: 110px;
     
-    
+} 
+
+.project_card_actions a svg,
+.project_card_actions button svg {
+  margin-right: 0.5em;
 }
+
 .project_card_actions svg{
     margin-right: .5em;
 }
@@ -96,15 +118,15 @@
 
 @media (max-width: 900px) {
   .project_card {
-    flex: 1 1 calc(50% - 1rem);
-    max-width: calc(50% - 1rem);
+    flex: 1 1 48%; 
+    max-width: 48%
   }
 }
 
 
 @media (max-width: 600px) {
   .project_card {
-    flex: 1 1 100%;  
+    flex: 1 1 100%; 
     max-width: 100%;
   }
 }

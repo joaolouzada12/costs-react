@@ -1,0 +1,27 @@
+/* src/pages/Company.module.css */
+.company {
+  padding: 2rem;
+  background-color: #222;
+  color: #eee;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  max-width: 800px;
+  margin: 2rem auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.company h2 {
+  color: #ffbb33;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.company p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.company strong {
+  color: #ffdd57;
+}

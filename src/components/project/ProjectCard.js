@@ -5,7 +5,12 @@ import { BsPencil, BsFillTrashFill } from 'react-icons/bs'
 function ProjectCard({id, name, budget, category, handleRemove}){
   return (
     <div className={styles.project_card}>
-      <h4>{name}</h4>
+      <h4>
+  <Link to={`/project/${id}`} className={styles.project_link}>
+    {name}
+  </Link>
+</h4>
+
       <p>
         <span>Orçamento</span> R${Number(budget).toLocaleString('pt-BR')}
       </p>
@@ -13,9 +18,9 @@ function ProjectCard({id, name, budget, category, handleRemove}){
         <span className={styles[category.toLowerCase()]}></span>{category}
         </p>
       <div className={styles.project_card_actions}>
-        <Link to="/"> 
-          <BsPencil /> Editar
-        </Link>
+      <Link to={`/project/${id}`}>
+           <BsPencil /> Editar
+      </Link>
         <button onClick={() => handleRemove(id)}>
           <BsFillTrashFill /> Excluir     
         </button>

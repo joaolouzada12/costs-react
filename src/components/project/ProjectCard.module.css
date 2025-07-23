@@ -115,6 +115,13 @@
     background-color: #222;
     color: #ffbb33;
 }
+.project_link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+
 
 @media (max-width: 900px) {
   .project_card {

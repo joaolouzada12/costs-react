@@ -84,5 +84,3 @@ function removeProject(id) {
 }
 
 export default Projects;
-
-
